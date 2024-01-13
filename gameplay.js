@@ -31,7 +31,7 @@ shuffle(deck);
 // Function to draw the next card or redirect to home page
 function drawNextCard() {
     // Random chance for the special message
-    if (Math.floor(Math.random() * 69) === 0) { // 1 in 69 chance
+    if (Math.floor(Math.random() * 70) === 0) { 
         document.getElementById('cardContent').innerHTML = "<span style='font-size:xx-large ;'>Cock Or Ball !!!!!! <br><br><br><br><br><br></span><span style='font-size: small;'>if your a girl just pick someone</span>";
     } else {
         if (currentCardIndex < deck.length) {
