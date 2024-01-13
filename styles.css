@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background-color: #121212; /* Dark background */
+    color:#19f3f3; /* Light text color for contrast */
+}
+
+header {
+    margin-bottom: 20px;
+    text-shadow:
+    -1px -1px 0 #e22cfa,  
+     1px -1px 0 #e22cfa,
+    -1px 1px 0 #e22cfa,
+     1px 1px 0 #e22cfa;
+     font-family: 'Roboto Mono', monospace;
+}
+
+input[type=text] {
+    font-family: 'Roboto Mono', monospace;
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 80%;
+    height: 40px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #e22cfa, #19f3f3); /* gradient border */
+    border-radius: 20px;
+    background-color: #222;
+    color: #e22cfa; /* Neon green text */
+}
+
+.input-row input[type="text"]::placeholder {
+    font-family: 'Roboto Mono', monospace;
+    color: rgba(255, 255, 255, 0.7); /* Light color for placeholder */
+    }
+
+input[type=range] {
+    width: 80%;
+    margin: 20px 0;
+    -webkit-appearance: none;
+    background: transparent;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #333;
+    height: 8px;
+    border-radius: 4px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #e22cfa; /* Neon green thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: #e22cfa; /* Neon green thumb */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:  #19f3f3; /* Neon green button */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: larger;
+    width: 40%;
+    height: 20%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #e22cfa; /* Lighter green on hover */
+    color: #121212;
+}
+
+.card {
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 50%;
+    height: 60%;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #e22cfa, #19f3f3); /* gradient border */
+    border-radius: 20px;
+    background-color: #222;
+    font-family: 'Roboto Mono', monospace;
+    font-size: x-large;
+    color: #e22cfa; /* Neon green text */
+}
+
+#gameArea {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nextCardButton {
+    margin-top: 20px;
+}
+
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 20vh;
+    }
+    
+    #sliderValue {
+    font-family: 'Roboto Mono', monospace;
+    color: #19f3f3(0, 204, 255); 
+    margin: 10px 0;
+    font-weight: bold;
+    }
+    
+    
+    @media (max-width: 600px) {
+    input[type=text], input[type=range], button {
+    width: 90%;
+    }
+    }
+
+
+.card {
+    width: 95%;
+}
+
+/* Additional hover effects for inputs */
+input[type=text]:hover, input[type=text]:focus {
+    background-color: #333;
+    color: #1ef;
+    }
+    
+    /* Enhancing the overall aesthetics */
+    footer {
+        font-family: 'Roboto Mono', monospace;
+    padding: 20px;
+    color: rgb(255, 0, 191);
+    }

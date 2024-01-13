@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cock o Ball: Remixed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Cock o Ball: Remixed</h1>
+        </div>
+    </header>
+    <main>
+        <div class="input-row">
+            <input type="text" id="playerNames" placeholder="Enter player names, separated by commas">
+        </div>
+        <div class="input-row">
+            <input type="text" id="extraPrompts" placeholder="Enter extra prompts, separated by commas">
+        </div>
+        <div class="slider-row">
+            <label for="maxDrinks">Max Drinks (1-6):</label>
+            <span id="sliderValue">3</span>
+            <input type="range" id="maxDrinks" min="1" max="6" value="3" oninput="updateSliderValue(this.value)">
+        </div>
+        <div class="input-row">
+            <button id="startButton">Start Game</button>
+        </div>
+    </main>
+    <footer>
+        <p>made by owen shaw</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
