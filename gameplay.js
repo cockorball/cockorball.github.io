@@ -30,17 +30,22 @@ shuffle(deck);
 
 // Function to draw the next card or redirect to home page
 function drawNextCard() {
-    if (currentCardIndex < deck.length) {
-        document.getElementById('cardContent').textContent = deck[currentCardIndex];
-        currentCardIndex++;
+    // Random chance for the special message
+    if (Math.floor(Math.random() * 69) === 0) { // 1 in 69 chance
+        document.getElementById('cardContent').innerHTML = "<span style='font-size:xx-large ;'>Cock Or Ball !!!!!! <br><br><br><br><br><br></span><span style='font-size: small;'>if your a girl just pick someone</span>";
     } else {
-        // Check if the button is already clicked once after deck is finished
-        if (document.getElementById('cardContent').textContent === "No more cards! Press draw next card to return to the Home page") {
-            // Redirect to home page
-            window.location.href = 'index.html';
+        if (currentCardIndex < deck.length) {
+            document.getElementById('cardContent').textContent = deck[currentCardIndex];
+            currentCardIndex++;
         } else {
-            // Display the message and let user click again to redirect
-            document.getElementById('cardContent').textContent = "No more cards! Press draw next card to return to the Home page";
+            // Check if the button is already clicked once after deck is finished
+            if (document.getElementById('cardContent').textContent === "No more cards! Press draw next card to return to the Home page") {
+                // Redirect to home page
+                window.location.href = 'index.html';
+            } else {
+                // Display the message and let user click again to redirect
+                document.getElementById('cardContent').textContent = "No more cards! Press draw next card to return to the Home page";
+            }
         }
     }
     flipCard(); // Call flipCard function after drawing the card
