@@ -4,7 +4,24 @@ const examplePrompts = [
     "Dare: Sing a song loudly in public.",
     "Truth: Describe your first crush.",
     "Dare: Do 10 push-ups right now.",
-    "Truth: What's the most embarrassing thing you've done?"
+    "Truth: What's the most embarrassing thing you've done?",
+    "Become the question master",
+    "Start a waterfall",
+    "Choose someone to drink with you and drink the amount",
+    "Drink the amount",
+    "You are the thumb master",
+    "Arms to the sky HEAVEN!",
+    "Rock Paper Scissors with the person to your left loser drinks the amount",
+    "Do an impression of someone playing the game",
+    "Do an impression of someone playing the game, if people can guess who it is that person drinks if not BOTTOMS UP!",
+    "Do a shot",
+    "Show everyone a secret talent",
+    "Reinact a sex position with someone of your choice",
+    "You and the person two to your right play Flip cup! Loser drinks the ammount",
+    "Make a rule",
+    "Left Hands Only!",
+    "You are the question master anyone who answers you drinks the amount",
+    "The Floor is lava, last person touching it drinks the amount"
 ];
 
 function updateSliderValue(value) {

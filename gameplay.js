@@ -15,7 +15,7 @@ function getRandomPlayerName() {
 
 // Combine player names with combined prompts to create a deck
 let deck = combinedPrompts.map(prompt => {
-    return playerNames.map(name => `${getRandomPlayerName()}: ${prompt} OR Drink ${getRandomDrinkAmount()}`);
+    return playerNames.map(name => `${name}: ${prompt}\n\nOR\n\nDRINK ${getRandomDrinkAmount()}`);
 }).flat();
 
 // Shuffle the deck
