@@ -43,6 +43,19 @@ function drawNextCard() {
             document.getElementById('cardContent').textContent = "No more cards! Press draw next card to return to the Home page";
         }
     }
+    flipCard(); // Call flipCard function after drawing the card
 }
 
+// Function to handle card flip animation
+function flipCard() {
+    var card = document.querySelector('.card');
+    card.classList.add('is-flipped');
+
+    // Remove the class after the animation completes
+    setTimeout(function() {
+        card.classList.remove('is-flipped');
+    }, 800); // 800ms to match the duration of the flip animation
+}
+
+// Add event listener to the 'Draw Next Card' button
 document.getElementById('nextCardButton').addEventListener('click', drawNextCard);
