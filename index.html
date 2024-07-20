@@ -20,13 +20,16 @@
     </header>
     <main>
         <div class="input-row">
+            <p>This is a simple little drinking game, enter the names of the people playing any prompts you want and hit Start Game.</p><br><p>Have Fun!!!</p>
+        </div>
+        <div class="input-row">
             <input type="text" id="playerNames" placeholder="Enter player names, separated by commas">
         </div>
         <div class="input-row">
             <input type="text" id="extraPrompts" placeholder="Enter extra prompts, separated by commas">
         </div>
         <div class="slider-row">
-            <label for="maxDrinks">Max Drinks (1-6):</label>
+            <label for="maxDrinks">Max Swigs to take: (1-6):</label>
             <span id="sliderValue">3</span>
             <input type="range" id="maxDrinks" min="1" max="6" value="3" oninput="updateSliderValue(this.value)">
         </div>
@@ -49,6 +52,6 @@
         <br>
         <p>made by </p><a href="https://github.com/oshaw1">github.com/oshaw1</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="gameplay.js"></script>
 </body>
 </html>
