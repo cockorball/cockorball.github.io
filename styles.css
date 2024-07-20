@@ -4,7 +4,7 @@ body {
     background-color: #121212; /* Dark background */
     color:#19f3f3; /* Light text color for contrast */
 }
-
+/* github has an issue detecting css sometimes*/
 header {
     margin-bottom: 20px;
     text-shadow:
@@ -126,20 +126,20 @@ button:hover {
     .card {
         margin: 10px 0;
         padding: 10px 20px;
-        width: 60%;  /* Adjust as needed */
-        height: 40%; /* Adjust as needed */
+        width: 60%;  
+        height: 40%; 
         border: 2px solid;
         border-image-slice: 1;
         border-width: 3px;
-        border-image-source: linear-gradient(to left, #e22cfa, #19f3f3); /* gradient border */
+        border-image-source: linear-gradient(to left, #e22cfa, #19f3f3); 
         border-radius: 20px;
         background-color: #222;
         font-family: 'Roboto Mono', monospace;
         font-size: x-large;
-        color: #e22cfa; /* Neon green text */
+        color: #e22cfa; 
         transition: transform 0.8s;
         transform-style: preserve-3d;
-        backface-visibility: hidden; /* Ensures the content isn't visible when flipped */
+        backface-visibility: hidden; 
         display: flex;
         align-items: center;
         justify-content: center;
