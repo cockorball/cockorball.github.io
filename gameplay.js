@@ -185,7 +185,7 @@ function shuffle(array) {
 }
 
 function drawNextCard() {
-    if (Math.floor(Math.random() * 70) === 0) {
+    if (Math.floor(Math.random() * 140) === 0) {
         document.getElementById('cardContent').innerHTML = "<span style='font-size:xx-large ;'>Cock Or Ball !!!!!! <br><br><br><br><br><br></span><span style='font-size: small;'>if your a girl just pick someone</span>";
     } else {
         if (currentCardIndex < deck.length) {
